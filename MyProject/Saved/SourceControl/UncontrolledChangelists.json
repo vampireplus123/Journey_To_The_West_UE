@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/Level/CreationMap.umap",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/BP_SunWukong.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/InputMappinContext.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/MyMappingContext.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/DataAsset_InputConfig.uasset"
+			]
+		}
+	]
+}

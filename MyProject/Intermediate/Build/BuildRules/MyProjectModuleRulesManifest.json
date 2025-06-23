@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/MyProject.Build.cs",
+		"/Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject.Target.cs",
+		"/Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProjectEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.0"
+}

@@ -1,0 +1,30 @@
+-L/usr/lib/swift
+-arch x86_64
+-isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+-target x86_64-apple-macos14.00
+-dead_strip
+-dynamiclib
+-headerpad_max_install_names
+-current_version 4313.93.11
+-compatibility_version 5.6.0
+-rpath @loader_path/ -rpath @executable_path/
+-undefined dynamic_lookup
+-Wl,-no_fixup_chains
+-install_name "@rpath/UnrealEditor-MyProject.dylib"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyGameModeBase.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyProject.init.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroBaseCharacter.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/DataAsset_InputConfig.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroController.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/SunWukong.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroInputComponent.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyProject.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroBaseCharacter.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyGameModeBase.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroGamePlayTag.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/DataAsset_InputConfig.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroController.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/HeroInputComponent.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/SunWukong.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/PerModuleInline.gen.cpp.o"
+-o "/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Mac/Stubs/x64/Development/UnrealEditor-MyProject.dylib"
