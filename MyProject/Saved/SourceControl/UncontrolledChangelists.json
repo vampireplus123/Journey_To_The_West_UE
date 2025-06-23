@@ -7,9 +7,22 @@
 			"files": [
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/Level/CreationMap.umap",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/BP_SunWukong.uasset",
-				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/InputMappinContext.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/MyMappingContext.uasset",
-				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/DataAsset_InputConfig.uasset"
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/DataAsset_InputConfig.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Shield_Spear_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Shield_Spear_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Shield_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Shield_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Shield_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Dodge_L_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Dodge_R_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Hurt_Light_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Shield_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/InputMappinContext.uasset"
 			]
 		}
 	]
