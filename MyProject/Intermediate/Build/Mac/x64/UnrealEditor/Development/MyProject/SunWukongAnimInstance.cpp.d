@@ -4152,9 +4152,11 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/SunWukongAnimInstance.h \
   Runtime/Core/Public/CoreMinimal.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/HeroAnimInstance.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/HeroBaseAnimInstance.h \
   Runtime/Engine/Classes/Animation/AnimInstance.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroAnimInstance.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukongAnimInstance.generated.h

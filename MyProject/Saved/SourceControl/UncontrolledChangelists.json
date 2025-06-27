@@ -7,8 +7,30 @@
 			"files": [
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/Level/CreationMap.umap",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/BP_SunWukong.uasset",
-				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/MyMappingContext.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/DataAsset_InputConfig.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/InputMappinContext.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/BlendSpace/Walk_Carrying_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Idle_Carrying_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Walk_Carrying_B_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/BlendSpace/Walk_Carrying_Backward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Walk_Carrying_BL_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Walk_Carrying_BR_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Walk_Carrying_F_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Idle_to_Jog_Shield_Spear_B_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Idle_to_Jog_Shield_Spear_F_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Shield_Spear_Forward_BlendSpace.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Idle_to_Jog_Shield_Spear_L_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/EssentialSpearShieldAnimations/Animation/Sequence/Idle_to_Jog_Shield_Spear_R_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Death.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Idle.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/ParagonSunWukong/Characters/Heroes/Wukong/Animations/LevelStart.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_A_Slow_Recovery.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/ParagonSunWukong/Characters/Heroes/Wukong/Animations/Primary_Melee_D_Slow.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/GameMode/BP_MyGameModeBase.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/Anim_BP/BP_SunWukong.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/Anim_BP/Blend_Space/BS_SunWukong.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/Anim_BP/BP_SunWukongAnimClass.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/MyMappingContext.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Shield_Spear_Forward_BlendSpace.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Forward_BlendSpace.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Brake_Backward_BlendSpace.uasset",
@@ -22,7 +44,8 @@
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Backward_BlendSpace.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Forward_BlendSpace.uasset",
 				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/BlendSpace/Idle_to_Jog_Shield_Backward_BlendSpace.uasset",
-				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/PlayerCharacters/InputMappinContext.uasset"
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/Sequence/Attack_01_Seq.uasset",
+				"/Volumes/Data/Journey_To_The_West_UE/MyProject/Content/SpearAnimation/EssentialSpearShieldAnimations/Animation/Sequence/Attack_02_Seq.uasset"
 			]
 		}
 	]

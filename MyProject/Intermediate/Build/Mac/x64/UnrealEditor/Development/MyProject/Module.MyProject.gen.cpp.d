@@ -4168,12 +4168,10 @@
   Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   Runtime/Engine/Classes/Engine/DataAsset.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/DataAsset_InputConfig.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroAnimInstance.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/HeroAnimInstance.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/HeroBaseAnimInstance.h \
   Runtime/Engine/Classes/Animation/AnimInstance.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroAnimInstance.generated.h \
   Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseCharacter.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/HeroBaseCharacter.h \

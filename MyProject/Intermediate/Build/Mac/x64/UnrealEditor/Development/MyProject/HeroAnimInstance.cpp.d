@@ -4157,4 +4157,64 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroAnimInstance.generated.h
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroAnimInstance.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/HeroBaseCharacter.h \
+  Runtime/Engine/Classes/GameFramework/Character.h \
+  Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
+  Runtime/CoreUObject/Public/Templates/SubclassOf.h \
+  Runtime/CoreUObject/Public/UObject/CoreNet.h \
+  Runtime/Engine/Classes/Engine/NetSerialization.h \
+  Runtime/Engine/Classes/Engine/EngineTypes.h \
+  Runtime/Engine/Classes/Components/ActorComponent.h \
+  Runtime/Engine/Classes/GameFramework/Actor.h \
+  Runtime/Engine/Classes/GameFramework/Pawn.h \
+  Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  Runtime/CoreUObject/Public/UObject/Object.h \
+  Runtime/Core/Public/Serialization/BitWriter.h \
+  Runtime/Core/Public/Containers/BitArray.h \
+  Runtime/Net/Core/Public/Net/Core/NetToken/NetTokenExportContext.h \
+  Runtime/Core/Public/Containers/Array.h \
+  Runtime/Net/Core/Public/Net/Core/NetToken/NetToken.h \
+  Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
+  Runtime/Engine/Classes/Animation/AnimationAsset.h \
+  Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
+  Runtime/Core/Public/HAL/IConsoleManager.h \
+  Runtime/CoreUObject/Public/UObject/Class.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseCharacter.generated.h \
+  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/Engine/Classes/Animation/AnimMontage.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
+  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementInterface.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
+  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
+  Runtime/Engine/Classes/Components/SceneComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
+  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
+  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
+  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
+  Runtime/Engine/Public/CollisionQueryParams.h \
+  Runtime/PhysicsCore/Public/CollisionShape.h \
+  Runtime/Engine/Public/Engine/OverlapInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h
