@@ -4150,32 +4150,12 @@
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/ToolMenus/UHT/ToolMenus.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Module.MyProject.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/DataAsset_InputConfig.gen.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacter.gen.cpp \
   Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/DataAsset_InputConfig.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Character/BaseCharacter.h \
   Runtime/Core/Public/CoreMinimal.h \
-  Runtime/GameplayTags/Classes/GameplayTagContainer.h \
-  Runtime/Core/Public/Stats/Stats.h \
-  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/CoreUObject/Public/UObject/Object.h \
-  Runtime/CoreUObject/Public/UObject/Class.h \
-  Runtime/Core/Public/Misc/ComparisonUtility.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
-  Runtime/Core/Public/Containers/StringView.h \
-  Runtime/Core/Public/HAL/Platform.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
-  Runtime/Engine/Classes/Engine/DataAsset.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/DataAsset_InputConfig.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/AnimInstance/HeroBaseAnimInstance.h \
-  Runtime/Engine/Classes/Animation/AnimInstance.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseAnimInstance.generated.h \
-  Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseCharacter.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/HeroBaseCharacter.h \
   Runtime/Engine/Classes/GameFramework/Character.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
   Runtime/CoreUObject/Public/Templates/SubclassOf.h \
   Runtime/CoreUObject/Public/UObject/CoreNet.h \
@@ -4185,6 +4165,7 @@
   Runtime/Engine/Classes/GameFramework/Actor.h \
   Runtime/Engine/Classes/GameFramework/Pawn.h \
   Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
+  Runtime/CoreUObject/Public/UObject/Object.h \
   Runtime/Core/Public/Serialization/BitWriter.h \
   Runtime/Core/Public/Containers/BitArray.h \
   Runtime/Net/Core/Public/Net/Core/NetToken/NetTokenExportContext.h \
@@ -4192,43 +4173,13 @@
   Runtime/Net/Core/Public/Net/Core/NetToken/NetToken.h \
   Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
   Runtime/Engine/Classes/Animation/AnimationAsset.h \
   Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
   Runtime/Core/Public/HAL/IConsoleManager.h \
+  Runtime/CoreUObject/Public/UObject/Class.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseCharacter.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroController.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/HeroController/HeroController.h \
-  Runtime/Engine/Classes/GameFramework/PlayerController.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroController.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroInputComponent.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Components/Input/HeroInputComponent.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h \
-  Runtime/Engine/Classes/Components/InputComponent.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
-  Runtime/InputCore/Classes/InputCoreTypes.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputComponent.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroInputComponent.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/MyGameModeBase.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/MyGameModeBase.h \
-  Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
-  Runtime/Engine/Classes/GameFramework/Info.h \
-  Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
-  Runtime/CoreOnline/Public/Online/CoreOnline.h \
-  Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/MyGameModeBase.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.gen.cpp \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/SunWukong.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacter.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/MyProject.init.gen.cpp

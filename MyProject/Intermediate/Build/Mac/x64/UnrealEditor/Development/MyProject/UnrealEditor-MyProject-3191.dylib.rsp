@@ -1,0 +1,42 @@
+-L/usr/lib/swift
+-arch x86_64
+-isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+-target x86_64-apple-macos14.00
+-dead_strip
+-dynamiclib
+-headerpad_max_install_names
+-current_version 4313.93.11
+-compatibility_version 5.6.0
+-rpath @loader_path/ -rpath @executable_path/
+"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/Current/MultitouchSupport.tbd"
+"../Binaries/Mac/UnrealEditor-Engine.dylib"
+-rpath "@loader_path/../../../../../../Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac"
+"../Binaries/Mac/UnrealEditor-Core.dylib"
+"../Binaries/Mac/UnrealEditor-CoreUObject.dylib"
+"../Binaries/Mac/UnrealEditor-InputCore.dylib"
+"../Plugins/EnhancedInput/Binaries/Mac/UnrealEditor-EnhancedInput.dylib"
+-rpath "@loader_path/../../../../../../Users/Shared/Epic Games/UE_5.6/Engine/Plugins/EnhancedInput/Binaries/Mac"
+-rpath "@executable_path/../../../../../../Engine/Plugins/EnhancedInput/Binaries/Mac"
+"../Binaries/Mac/UnrealEditor-GameplayTags.dylib"
+-framework "AVFoundation"
+-framework "CoreVideo"
+-framework "CoreMedia"
+-framework "Cocoa"
+-framework "Carbon"
+-framework "IOKit"
+-framework "Security"
+-framework "UniformTypeIdentifiers"
+-framework "Network"
+-framework "ScreenCaptureKit"
+-framework "SystemConfiguration"
+-install_name "@rpath/UnrealEditor-MyProject-3191.dylib"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyGameModeBase.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyProject.init.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/SunWukong.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/BaseCharacter.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyProject.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/PerModuleInline.gen.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/MyGameModeBase.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/BaseCharacter.cpp.o"
+"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/SunWukong.cpp.o"
+-o "/Volumes/Data/Journey_To_The_West_UE/MyProject/Binaries/Mac/UnrealEditor-MyProject-3191.dylib"

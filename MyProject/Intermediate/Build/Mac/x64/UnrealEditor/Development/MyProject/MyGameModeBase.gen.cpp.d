@@ -4151,7 +4151,7 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/MyGameModeBase.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h \
   Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/MyGameModeBase.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/GameMode/MyGameModeBase.h \
   Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \

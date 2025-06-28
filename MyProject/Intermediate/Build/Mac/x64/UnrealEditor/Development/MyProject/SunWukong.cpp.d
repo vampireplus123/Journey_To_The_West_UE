@@ -4148,17 +4148,13 @@
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/Developer/ToolMenus/Public/ToolMenuEntryScript.h \
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/ToolMenus/UHT/ToolMenuEntryScript.generated.h \
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/ToolMenus/UHT/ToolMenus.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Private/Characters/SunWukong.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Private/Character/Wukong/SunWukong.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/SunWukong.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Character/Wukong/SunWukong.h \
   Runtime/Core/Public/CoreMinimal.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
-  Runtime/InputCore/Classes/InputCoreTypes.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
-  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Characters/HeroBaseCharacter.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Character/BaseCharacter.h \
   Runtime/Engine/Classes/GameFramework/Character.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
   Runtime/CoreUObject/Public/Templates/SubclassOf.h \
   Runtime/CoreUObject/Public/UObject/CoreNet.h \
@@ -4176,6 +4172,7 @@
   Runtime/Net/Core/Public/Net/Core/NetToken/NetToken.h \
   Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
   Runtime/Engine/Classes/Animation/AnimationAsset.h \
   Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
@@ -4183,67 +4180,23 @@
   Runtime/CoreUObject/Public/UObject/Class.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroBaseCharacter.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h \
-  Runtime/Engine/Classes/Camera/CameraComponent.h \
-  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
-  Runtime/Engine/Classes/Components/SceneComponent.h \
-  Runtime/Engine/Classes/Components/StaticMeshComponent.h \
-  Runtime/Engine/Classes/Engine/BlendableInterface.h \
-  Runtime/Engine/Classes/Engine/Scene.h \
-  Runtime/Engine/Classes/Camera/CameraTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CameraComponent.generated.h \
-  Runtime/Engine/Classes/Components/CapsuleComponent.h \
-  Runtime/Engine/Classes/Components/ShapeComponent.h \
-  Runtime/Engine/Classes/Components/PrimitiveComponent.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ShapeComponent.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CapsuleComponent.generated.h \
-  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
-  Runtime/Core/Public/Math/RandomStream.h \
-  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
-  Runtime/Engine/Public/WorldCollision.h \
-  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
-  Runtime/Engine/Classes/Animation/AnimMontage.h \
-  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
-  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
-  Runtime/CoreUObject/Public/UObject/Interface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
-  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
-  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
-  Runtime/Engine/Classes/GameFramework/NavMovementInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementInterface.generated.h \
-  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
-  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
-  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
-  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
-  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
-  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
-  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
-  Runtime/Engine/Public/CollisionQueryParams.h \
-  Runtime/PhysicsCore/Public/CollisionShape.h \
-  Runtime/Engine/Public/Engine/OverlapInfo.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h \
-  Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SpringArmComponent.generated.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystems.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystemInterface.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedPlayerInput.h \
   Runtime/Engine/Classes/GameFramework/PlayerInput.h \
   Runtime/Slate/Public/Framework/Commands/InputChord.h \
   Runtime/Engine/Public/GestureRecognizer.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
   Runtime/Engine/Public/InputKeyEventArgs.h \
   Runtime/Engine/Public/KeyState.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PlayerInput.generated.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
   Runtime/Engine/Classes/Engine/DataAsset.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
@@ -4274,11 +4227,8 @@
   Runtime/Engine/Public/Subsystems/LocalPlayerSubsystem.h \
   Runtime/Engine/Public/Subsystems/WorldSubsystem.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputSubsystems.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/DataAsset_InputConfig.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/DataAsset_InputConfig.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Components/Input/HeroInputComponent.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h \
   Runtime/Engine/Classes/Components/InputComponent.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputComponent.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/HeroInputComponent.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/HeroGamePlayTag.h
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacter.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h

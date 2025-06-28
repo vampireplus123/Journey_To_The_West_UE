@@ -285,7 +285,6 @@
 -I"Editor/SceneDepthPickerMode/Public"
 -I"../Intermediate/Build/Mac/UnrealEditor/Inc/AnimationEditMode/UHT"
 -I"Editor/AnimationEditMode/Public"
--I"/Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT"
 -I"/Volumes/Data/Journey_To_The_West_UE/MyProject/Source"
 -I"/Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public"
 -I"../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT"

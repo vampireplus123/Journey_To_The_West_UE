@@ -4148,9 +4148,9 @@
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/Developer/ToolMenus/Public/ToolMenuEntryScript.h \
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/ToolMenus/UHT/ToolMenuEntryScript.generated.h \
   /Users/Shared/Epic\ Games/UE_5.6/Engine/Source/../Intermediate/Build/Mac/UnrealEditor/Inc/ToolMenus/UHT/ToolMenus.generated.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Private/MyGameModeBase.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/GameMode/MyGameModeBase.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/x64/UnrealEditor/Development/MyProject/Definitions.MyProject.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/MyGameModeBase.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/GameMode/MyGameModeBase.h \
   Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
