@@ -3,3 +3,14 @@
 
 #include "Character/Wukong/SunWukong.h"
 
+#include "Components/AttackComponent.h"
+
+void ASunWukong::IPlayAttackMontage(UAnimMontage* AttackMontage)
+{
+	PlayAnimMontage(AttackMontage);
+}
+
+void ASunWukong::Attack()
+{
+	AttackComponent->RequestAttack();
+}

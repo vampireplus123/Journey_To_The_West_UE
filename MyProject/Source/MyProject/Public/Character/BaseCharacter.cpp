@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "DataAsset/EnhancedInputData.h"
+#include "Components/AttackComponent.h"	
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -23,6 +24,8 @@ ABaseCharacter::ABaseCharacter()
 	CameraComponent->SetupAttachment(SpringArmComponent, USpringArmComponent::SocketName);
 	CameraComponent->bUsePawnControlRotation = false; // Không bị ảnh hưởng bởi pitch/roll/yaw của pawn
 
+	//Attack Component
+	AttackComponent = CreateDefaultSubobject<UAttackComponent>(TEXT("Attack Component"));
 	// Để nhân vật không xoay theo controller khi điều khiển camera (chỉ xoay theo hướng di chuyển)
 	bUseControllerRotationYaw = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
@@ -47,6 +50,10 @@ void ABaseCharacter::BeginPlay()
 	}
 }
 
+void ABaseCharacter::Attack()
+{
+}
+
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -59,7 +66,18 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	{
 		Input->BindAction(EnhancedInputData->InputAction_Move, ETriggerEvent::Triggered, this, &ABaseCharacter::MoveAround);
 		Input->BindAction(EnhancedInputData->InputAction_Look, ETriggerEvent::Triggered, this, &ABaseCharacter::LookAround);
+		Input->BindAction(EnhancedInputData->InputAction_Attack, ETriggerEvent::Started, this, &ABaseCharacter::Attack);
 	}
+}
+
+void ABaseCharacter::PostInitializeComponents()
+{
+	Super::PostInitializeComponents();
+	if (AttackComponent)
+	{
+		AttackComponent->SettupAttackComponent(CharacterDataAsset);
+	}
+	
 }
 
 void ABaseCharacter::MoveAround(const FInputActionValue& Value)

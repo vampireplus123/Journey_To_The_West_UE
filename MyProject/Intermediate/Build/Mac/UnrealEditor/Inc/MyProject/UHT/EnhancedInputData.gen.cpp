@@ -72,10 +72,15 @@ struct Z_Construct_UClass_UEnhancedInputData_Statics
 		{ "Category", "Binding Action" },
 		{ "ModuleRelativePath", "Public/DataAsset/EnhancedInputData.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputAction_Attack_MetaData[] = {
+		{ "Category", "Binding Action" },
+		{ "ModuleRelativePath", "Public/DataAsset/EnhancedInputData.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputAction_Look;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputAction_Move;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputAction_Attack;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -86,10 +91,12 @@ struct Z_Construct_UClass_UEnhancedInputData_Statics
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputContext = { "InputContext", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnhancedInputData, InputContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputContext_MetaData), NewProp_InputContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Look = { "InputAction_Look", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnhancedInputData, InputAction_Look), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputAction_Look_MetaData), NewProp_InputAction_Look_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Move = { "InputAction_Move", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnhancedInputData, InputAction_Move), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputAction_Move_MetaData), NewProp_InputAction_Move_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Attack = { "InputAction_Attack", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnhancedInputData, InputAction_Attack), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputAction_Attack_MetaData), NewProp_InputAction_Attack_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnhancedInputData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Look,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Move,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnhancedInputData_Statics::NewProp_InputAction_Attack,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UEnhancedInputData_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UEnhancedInputData_Statics::DependentSingletons[])() = {
@@ -129,10 +136,10 @@ UEnhancedInputData::~UEnhancedInputData() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_EnhancedInputData_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnhancedInputData, UEnhancedInputData::StaticClass, TEXT("UEnhancedInputData"), &Z_Registration_Info_UClass_UEnhancedInputData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnhancedInputData), 1682040048U) },
+		{ Z_Construct_UClass_UEnhancedInputData, UEnhancedInputData::StaticClass, TEXT("UEnhancedInputData"), &Z_Registration_Info_UClass_UEnhancedInputData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnhancedInputData), 1536092782U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_EnhancedInputData_h__Script_MyProject_1957285393(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_EnhancedInputData_h__Script_MyProject_2458226593(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_EnhancedInputData_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_EnhancedInputData_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

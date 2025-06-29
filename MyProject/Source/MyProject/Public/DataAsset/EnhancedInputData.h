@@ -11,6 +11,7 @@
  */
 class UInputMappingContext;
 class UInputAction;
+class UAnimMontage;
 UCLASS()
 class MYPROJECT_API UEnhancedInputData : public UDataAsset
 {
@@ -23,4 +24,6 @@ public:
 	UInputAction* InputAction_Look;
 	UPROPERTY(EditDefaultsOnly,Category="Binding Action")
 	UInputAction* InputAction_Move;
+	UPROPERTY(EditDefaultsOnly,Category="Binding Action")
+	UInputAction* InputAction_Attack;
 };

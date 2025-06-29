@@ -13,6 +13,8 @@ class USpringArmComponent;
 class UInputMappingContext;
 class UInputAction;
 class UEnhancedInputData;
+class UAttackComponent;
+class UBaseCharacterDataAsset;
 struct FInputActionState;
 
 UCLASS()
@@ -20,13 +22,24 @@ class MYPROJECT_API ABaseCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-
-
 public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	virtual void PostInitializeComponents() override;
 
+protected:
+	UPROPERTY(EditDefaultsOnly,Category="Data Assett")
+	UEnhancedInputData* EnhancedInputData;
+	UPROPERTY(EditDefaultsOnly,Category="Attack Component")
+	UAttackComponent* AttackComponent;
+
+	// Child Inherit Func
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+	virtual void Attack();
+	
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	float springArmLength = 400.f;
@@ -38,12 +51,7 @@ private:
 	USpringArmComponent* SpringArmComponent;
 	UPROPERTY(VisibleAnywhere,Category="Camera Component")
 	UCameraComponent* CameraComponent;
-	
-	UPROPERTY(EditDefaultsOnly,Category="Data Assett")
-	UEnhancedInputData* EnhancedInputData;
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere,Category="Character Data Asset for Montage")
+	UBaseCharacterDataAsset* CharacterDataAsset;
 
 };

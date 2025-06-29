@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeSunWukong() {}
 MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
 MYPROJECT_API UClass* Z_Construct_UClass_ASunWukong();
 MYPROJECT_API UClass* Z_Construct_UClass_ASunWukong_NoRegister();
+MYPROJECT_API UClass* Z_Construct_UClass_UAttackInterface_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MyProject();
 // ********** End Cross Module References **********************************************************
 
@@ -64,6 +65,7 @@ struct Z_Construct_UClass_ASunWukong_Statics
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ASunWukong>::IsAbstract,
 	};
@@ -74,6 +76,9 @@ UObject* (*const Z_Construct_UClass_ASunWukong_Statics::DependentSingletons[])()
 	(UObject* (*)())Z_Construct_UPackage__Script_MyProject,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASunWukong_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ASunWukong_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UAttackInterface_NoRegister, (int32)VTABLE_OFFSET(ASunWukong, IAttackInterface), false },  // 3001938791
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ASunWukong_Statics::ClassParams = {
 	&ASunWukong::StaticClass,
 	"Game",
@@ -81,11 +86,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ASunWukong_Statics::Cla
 	DependentSingletons,
 	nullptr,
 	nullptr,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	0,
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ASunWukong_Statics::Class_MetaDataParams), Z_Construct_UClass_ASunWukong_Statics::Class_MetaDataParams)
 };
@@ -106,10 +111,10 @@ ASunWukong::~ASunWukong() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 3569421304U) },
+		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 195844872U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_1244292307(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_2373425977(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
