@@ -18,18 +18,32 @@ void UAttackComponent::BeginPlay()
 	AttackInterface = TScriptInterface<IAttackInterface>(GetOwner());
 }
 
-void UAttackComponent::RequestAttack()
+void UAttackComponent::Attack()
 {
 	PlayAttackMontage = CharacterDataAsset->AttackMontage;
-	if (AttackInterface)
+	if (AttackInterface && CharacterDataAsset)
 	{
 		AttackInterface->IPlayAttackMontage(PlayAttackMontage);
 	}
+	isAttack = true;
+}
+
+void UAttackComponent::RequestAttack()
+{
+	if (isAttack)
+	{
+		return;
+	}
+	Attack();
 }
 
 void UAttackComponent::SettupAttackComponent(UBaseCharacterDataAsset* BCD)
 {
 	CharacterDataAsset = BCD;
+}
+void UAttackComponent::EndAttack()
+{
+	isAttack = false;
 }
 
 

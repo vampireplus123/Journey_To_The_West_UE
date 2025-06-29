@@ -16,6 +16,8 @@ class MYPROJECT_API ASunWukong : public ABaseCharacter, public  IAttackInterface
 	GENERATED_BODY()
 public:
 	virtual void IPlayAttackMontage(UAnimMontage* AttackMontage) override;
+	virtual void IAnimNotifyEndAttack() override;
+
 
 protected:
 	 virtual void Attack() override;

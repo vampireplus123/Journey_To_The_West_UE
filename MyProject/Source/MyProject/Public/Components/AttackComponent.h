@@ -23,6 +23,7 @@ public:
 	*/
 	void RequestAttack();
 	void SettupAttackComponent(UBaseCharacterDataAsset* BCD);
+	void EndAttack();
 
 protected:
 	// Called when the game starts
@@ -30,9 +31,14 @@ protected:
 private:
 	UPROPERTY()
 	UBaseCharacterDataAsset* CharacterDataAsset;
-private:
 	UPROPERTY()
 	TScriptInterface<IAttackInterface> AttackInterface;
 	UPROPERTY()
 	UAnimMontage* PlayAttackMontage;
+	
+private:
+	bool isAttack;
+	void Attack();
 };
+
+
