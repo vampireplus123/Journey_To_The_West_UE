@@ -6,7 +6,8 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "DataAsset/EnhancedInputData.h"
-#include "Components/AttackComponent.h"	
+#include "Components/AttackComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -33,6 +34,66 @@ ABaseCharacter::ABaseCharacter()
 }
 
 
+void ABaseCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	TArray<FHitResult> HitsResults;
+	FVector StartLocation = GetActorLocation();
+	FVector EndLocation = StartLocation + (GetActorForwardVector() * 1000.f);
+	
+	int HitCount = 0;
+	hitActors.Empty();
+	bool doHitSomething = UKismetSystemLibrary::LineTraceMultiForObjects
+	(
+		this,
+		StartLocation,
+		EndLocation,
+		TraceObjectTyoe,
+		false,
+		ActorsToIgnore,
+		EDrawDebugTrace::ForOneFrame,
+		HitsResults,
+		true
+	);
+	if (!doHitSomething)
+	{
+		return;
+	}
+	for (const FHitResult& hitresult : HitsResults)
+	{
+		if (hitActors.Contains(hitresult.GetActor()))
+		{
+			continue;
+		}
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage
+			(
+				-1,
+				1.0f,
+				FColor::Red,
+				hitresult.BoneName.ToString()
+			);
+			UKismetSystemLibrary::DrawDebugSphere
+			(
+				this,
+				hitresult.ImpactPoint,
+				10.0f
+			);
+			hitActors.Emplace(hitresult.GetActor());
+			HitCount++;
+			GEngine->AddOnScreenDebugMessage
+			(
+				-1,
+				1.0f,
+				FColor::Blue,
+				FString::Printf(TEXT("HitCount: %d"), HitCount)
+			);
+		}
+	}
+}
+
 void ABaseCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -52,6 +113,7 @@ void ABaseCharacter::BeginPlay()
 
 void ABaseCharacter::Attack()
 {
+	
 }
 
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -79,6 +141,8 @@ void ABaseCharacter::PostInitializeComponents()
 	}
 	
 }
+
+
 
 void ABaseCharacter::MoveAround(const FInputActionValue& Value)
 {

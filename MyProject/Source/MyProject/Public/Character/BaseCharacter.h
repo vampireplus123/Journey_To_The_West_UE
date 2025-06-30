@@ -27,6 +27,7 @@ public:
 	ABaseCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void PostInitializeComponents() override;
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 	UPROPERTY(EditDefaultsOnly,Category="Data Assett")
@@ -46,6 +47,13 @@ private:
 private:
 	void LookAround(const FInputActionValue& value);
 	void MoveAround(const FInputActionValue& value);
+protected:
+	//Trace Line
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
+	TArray<TEnumAsByte<EObjectTypeQuery>> TraceObjectTyoe;
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
+	TArray<AActor*> hitActors;
+	TArray<AActor*> ActorsToIgnore;
 private:
 	UPROPERTY(VisibleAnywhere,Category="Spring Arm Component")
 	USpringArmComponent* SpringArmComponent;
