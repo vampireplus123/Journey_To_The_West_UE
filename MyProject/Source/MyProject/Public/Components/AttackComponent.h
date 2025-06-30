@@ -25,7 +25,11 @@ public:
 	void SettupAttackComponent(UBaseCharacterDataAsset* BCD);
 	void EndAttack();
 	void TraceHit();
-
+private:
+	//trace hit data
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
+	TArray<AActor*> hitActors;
+	int HitCount;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

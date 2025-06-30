@@ -4,7 +4,8 @@
 #include "GameFramework/Character.h"
 #include "DataAsset/BaseCharacterDataAsset.h"
 #include "Interfaces/AttackInterface.h"
-
+#include "Kismet/KismetSystemLibrary.h"
+#include "DataAsset/BaseCharacterDataAsset.h"
 
 UAttackComponent::UAttackComponent()
 {
@@ -52,13 +53,13 @@ void UAttackComponent::TraceHit()
 	{
 		return;
 	}
-	if (GetMesh()==nullptr)
+	if (AttackInterface==nullptr)
 	{
 		return;
 	}
 	TArray<FHitResult> HitsResults;
-	const FVector StartLocation = GetMesh()->GetSocketLocation(CharacterDataAsset->StartPoint);
-	const FVector EndLocation = GetMesh()->GetSocketLocation(CharacterDataAsset->EndPoint);
+	const FVector StartLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->StartPoint);
+	const FVector EndLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->EndPoint);
 	
 	hitActors.Empty();
 	HitCount = 0;

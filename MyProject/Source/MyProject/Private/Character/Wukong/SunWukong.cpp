@@ -4,8 +4,6 @@
 #include "Character/Wukong/SunWukong.h"
 
 #include "Components/AttackComponent.h"
-#include "Kismet/KismetSystemLibrary.h"
-#include "DataAsset/BaseCharacterDataAsset.h"
 
 void ASunWukong::IPlayAttackMontage(UAnimMontage* AttackMontage)
 {

@@ -49,9 +49,7 @@ private:
 	void MoveAround(const FInputActionValue& value);
 protected:
 	//Trace Line
-	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
-	TArray<AActor*> hitActors;
-	int HitCount;
+	
 protected:
 	//character data asset
 	UPROPERTY(EditAnywhere,Category="Character Data Asset for Montage")
