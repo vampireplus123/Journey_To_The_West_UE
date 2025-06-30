@@ -4289,4 +4289,6 @@
   Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
   Runtime/Engine/Classes/Engine/CollisionProfile.h \
   Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/BaseCharacterDataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.generated.h

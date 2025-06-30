@@ -12,8 +12,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseCharacterDataAsset() {}
 
 // ********** Begin Cross Module References ********************************************************
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
+ENGINE_API UEnum* Z_Construct_UEnum_Engine_EObjectTypeQuery();
 MYPROJECT_API UClass* Z_Construct_UClass_UBaseCharacterDataAsset();
 MYPROJECT_API UClass* Z_Construct_UClass_UBaseCharacterDataAsset_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MyProject();
@@ -63,8 +65,46 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 		{ "Category", "Attack Montage" },
 		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceObjectTyoe_MetaData[] = {
+		{ "Category", "Trace Hit Data" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//trace hit\n" },
+#endif
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "trace hit" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActorsToIgnore_MetaData[] = {
+		{ "Category", "Trace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceRadius_MetaData[] = {
+		{ "Category", "Trace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartPoint_MetaData[] = {
+		{ "Category", "Trace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EndPoint_MetaData[] = {
+		{ "Category", "TTrace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DrawTime_MetaData[] = {
+		{ "Category", "TTrace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackMontage;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_TraceObjectTyoe_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_TraceObjectTyoe;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActorsToIgnore_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_ActorsToIgnore;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_TraceRadius;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_StartPoint;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_EndPoint;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DrawTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -73,8 +113,24 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_AttackMontage = { "AttackMontage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, AttackMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackMontage_MetaData), NewProp_AttackMontage_MetaData) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe_Inner = { "TraceObjectTyoe", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_Engine_EObjectTypeQuery, METADATA_PARAMS(0, nullptr) }; // 1798967895
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe = { "TraceObjectTyoe", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, TraceObjectTyoe), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceObjectTyoe_MetaData), NewProp_TraceObjectTyoe_MetaData) }; // 1798967895
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore_Inner = { "ActorsToIgnore", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore = { "ActorsToIgnore", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, ActorsToIgnore), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorsToIgnore_MetaData), NewProp_ActorsToIgnore_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceRadius = { "TraceRadius", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, TraceRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceRadius_MetaData), NewProp_TraceRadius_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_StartPoint = { "StartPoint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, StartPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartPoint_MetaData), NewProp_StartPoint_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_EndPoint = { "EndPoint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, EndPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EndPoint_MetaData), NewProp_EndPoint_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_DrawTime = { "DrawTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, DrawTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DrawTime_MetaData), NewProp_DrawTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseCharacterDataAsset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_AttackMontage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceRadius,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_StartPoint,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_EndPoint,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_DrawTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UBaseCharacterDataAsset_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UBaseCharacterDataAsset_Statics::DependentSingletons[])() = {
@@ -114,10 +170,10 @@ UBaseCharacterDataAsset::~UBaseCharacterDataAsset() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 1882039075U) },
+		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 2284165193U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_3551484888(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_2056155738(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

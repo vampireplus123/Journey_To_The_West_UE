@@ -25,5 +25,5 @@ class MYPROJECT_API IAttackInterface
 public:
 	virtual void IPlayAttackMontage(UAnimMontage* AttackMontage) = 0;
 	virtual void IAnimNotifyEndAttack() = 0;
-
+	virtual FVector IGetSocketLocation(const FName& SocketName)  = 0;
 };

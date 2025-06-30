@@ -17,6 +17,8 @@ class MYPROJECT_API ASunWukong : public ABaseCharacter, public  IAttackInterface
 public:
 	virtual void IPlayAttackMontage(UAnimMontage* AttackMontage) override;
 	virtual void IAnimNotifyEndAttack() override;
+	virtual void Tick(float DeltaTime) override;
+	virtual FVector IGetSocketLocation(const FName& SocketName) override;
 
 
 protected:

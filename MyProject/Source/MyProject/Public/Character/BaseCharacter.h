@@ -50,16 +50,18 @@ private:
 protected:
 	//Trace Line
 	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
-	TArray<TEnumAsByte<EObjectTypeQuery>> TraceObjectTyoe;
-	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
 	TArray<AActor*> hitActors;
-	TArray<AActor*> ActorsToIgnore;
+	int HitCount;
+protected:
+	//character data asset
+	UPROPERTY(EditAnywhere,Category="Character Data Asset for Montage")
+	UBaseCharacterDataAsset* CharacterDataAsset;
+	
 private:
 	UPROPERTY(VisibleAnywhere,Category="Spring Arm Component")
 	USpringArmComponent* SpringArmComponent;
 	UPROPERTY(VisibleAnywhere,Category="Camera Component")
 	UCameraComponent* CameraComponent;
-	UPROPERTY(EditAnywhere,Category="Character Data Asset for Montage")
-	UBaseCharacterDataAsset* CharacterDataAsset;
+	
 
 };

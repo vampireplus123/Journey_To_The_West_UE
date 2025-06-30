@@ -24,6 +24,7 @@ public:
 	void RequestAttack();
 	void SettupAttackComponent(UBaseCharacterDataAsset* BCD);
 	void EndAttack();
+	void TraceHit();
 
 protected:
 	// Called when the game starts

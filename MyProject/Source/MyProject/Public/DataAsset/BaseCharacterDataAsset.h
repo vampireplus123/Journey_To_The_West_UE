@@ -17,4 +17,18 @@ class MYPROJECT_API UBaseCharacterDataAsset : public UDataAsset
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Attack Montage")
 	UAnimMontage* AttackMontage;
+public:
+	//trace hit
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit Data")
+	TArray<TEnumAsByte<EObjectTypeQuery>> TraceObjectTyoe;
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit Data")
+	TArray<AActor*> ActorsToIgnore;
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit Data")
+	float TraceRadius = 10.f;
+	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit Data")
+	FName StartPoint;
+	UPROPERTY(EditDefaultsOnly, Category = "TTrace Hit Data")
+	FName EndPoint;
+	UPROPERTY(EditDefaultsOnly, Category = "TTrace Hit Data")
+	float DrawTime;
 };

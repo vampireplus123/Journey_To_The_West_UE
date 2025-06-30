@@ -4235,4 +4235,20 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackInterface.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Components/AttackComponent.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackComponent.generated.h
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackComponent.generated.h \
+  Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  Runtime/CoreUObject/Public/UObject/UnrealType.h \
+  Runtime/CoreUObject/Public/UObject/TextProperty.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/Engine/Classes/Engine/LatentActionManager.h \
+  Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
+  Runtime/Engine/Classes/Engine/CollisionProfile.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/BaseCharacterDataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.generated.h
