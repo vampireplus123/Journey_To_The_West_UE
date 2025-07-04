@@ -34,7 +34,7 @@ protected:
 	UAttackComponent* AttackComponent;
 
 	UFUNCTION()
-	void HandleTakePointDamage(
+	virtual void HandleTakePointDamage(
 		AActor* DamagedActor,
 		float
 		Damage,

@@ -4,6 +4,7 @@
 #include "Character/Wukong/SunWukong.h"
 
 #include "Components/AttackComponent.h"
+#include "DataAsset/BaseCharacterDataAsset.h"
 
 
 void ASunWukong::IPlayAttackMontage(UAnimMontage* AttackMontage)
@@ -50,5 +51,15 @@ float ASunWukong::ApplyDamage()
 {
 	Super::ApplyDamage();
 	return 300.f;
+}
+
+void ASunWukong::HandleTakePointDamage(AActor* DamagedActor, float Damage, class AController* InstigatedBy,
+	FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection,
+	const class UDamageType* DamageType, AActor* DamageCauser)
+{
+	Super::HandleTakePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName,
+	                             ShotFromDirection, DamageType,
+	                             DamageCauser);
+	PlayAnimMontage(CharacterDataAsset->HitReactionMontage);
 }
 

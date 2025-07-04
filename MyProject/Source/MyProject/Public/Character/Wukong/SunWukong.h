@@ -24,7 +24,18 @@ private:
 	UPROPERTY(EditDefaultsOnly,Category="Wukong Damage")
 	float Damage;
 protected:
-	 virtual void Attack() override;
+	virtual void Attack() override;
 	virtual float ApplyDamage() override;
+	virtual void HandleTakePointDamage(
+		AActor* DamagedActor,
+		float
+		Damage,
+		class AController* InstigatedBy,
+		FVector HitLocation, 
+		class UPrimitiveComponent* FHitComponent,
+		FName BoneName,
+		FVector ShotFromDirection,
+		const class UDamageType* DamageType,
+		AActor* DamageCauser) override;
 };
 

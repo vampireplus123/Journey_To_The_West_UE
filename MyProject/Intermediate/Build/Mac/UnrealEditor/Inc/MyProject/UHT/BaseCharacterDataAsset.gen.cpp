@@ -65,6 +65,10 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 		{ "Category", "Attack Montage" },
 		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HitReactionMontage_MetaData[] = {
+		{ "Category", "Hit React Montage" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TraceObjectTyoe_MetaData[] = {
 		{ "Category", "Trace Hit Data" },
 #if !UE_BUILD_SHIPPING
@@ -97,6 +101,7 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackMontage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_HitReactionMontage;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_TraceObjectTyoe_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TraceObjectTyoe;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActorsToIgnore_Inner;
@@ -113,6 +118,7 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_AttackMontage = { "AttackMontage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, AttackMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttackMontage_MetaData), NewProp_AttackMontage_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_HitReactionMontage = { "HitReactionMontage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, HitReactionMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HitReactionMontage_MetaData), NewProp_HitReactionMontage_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe_Inner = { "TraceObjectTyoe", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_Engine_EObjectTypeQuery, METADATA_PARAMS(0, nullptr) }; // 1798967895
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe = { "TraceObjectTyoe", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, TraceObjectTyoe), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TraceObjectTyoe_MetaData), NewProp_TraceObjectTyoe_MetaData) }; // 1798967895
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore_Inner = { "ActorsToIgnore", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -123,6 +129,7 @@ const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UBaseCharacterDa
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_DrawTime = { "DrawTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, DrawTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DrawTime_MetaData), NewProp_DrawTime_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseCharacterDataAsset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_AttackMontage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_HitReactionMontage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_TraceObjectTyoe,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_ActorsToIgnore_Inner,
@@ -170,10 +177,10 @@ UBaseCharacterDataAsset::~UBaseCharacterDataAsset() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 2284165193U) },
+		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 1665939666U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_2056155738(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_1176519790(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
