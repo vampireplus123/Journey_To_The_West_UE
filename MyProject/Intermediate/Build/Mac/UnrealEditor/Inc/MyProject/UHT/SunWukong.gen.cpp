@@ -122,10 +122,10 @@ ASunWukong::~ASunWukong() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 4292859047U) },
+		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 3558607070U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_1913595659(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_2715589509(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -16,11 +16,16 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class AController;
+class UDamageType;
+class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ABaseCharacter ***********************************************************
 #define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execHandleHitSomething);
+	DECLARE_FUNCTION(execHandleHitSomething); \
+	DECLARE_FUNCTION(execHandleTakePointDamage);
 
 
 MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();

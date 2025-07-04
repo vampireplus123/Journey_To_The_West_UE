@@ -17,6 +17,8 @@ class MYPROJECT_API UBaseCharacterDataAsset : public UDataAsset
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Attack Montage")
 	UAnimMontage* AttackMontage;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Hit React Montage")
+	UAnimMontage* HitReactionMontage;
 public:
 	//trace hit
 	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit Data")

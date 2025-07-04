@@ -27,13 +27,24 @@ public:
 	ABaseCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void PostInitializeComponents() override;
-	virtual void Tick(float DeltaTime) override;
-
 protected:
 	UPROPERTY(EditDefaultsOnly,Category="Data Assett")
 	UEnhancedInputData* EnhancedInputData;
 	UPROPERTY(EditDefaultsOnly,Category="Attack Component")
 	UAttackComponent* AttackComponent;
+
+	UFUNCTION()
+	void HandleTakePointDamage(
+		AActor* DamagedActor,
+		float
+		Damage,
+		class AController* InstigatedBy,
+		FVector HitLocation, 
+		class UPrimitiveComponent* FHitComponent,
+		FName BoneName,
+		FVector ShotFromDirection,
+		const class UDamageType* DamageType,
+		AActor* DamageCauser);
 
 	// Child Inherit Func
 protected:

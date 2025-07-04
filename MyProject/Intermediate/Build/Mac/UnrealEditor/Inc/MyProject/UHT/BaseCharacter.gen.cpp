@@ -13,8 +13,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
@@ -70,12 +75,101 @@ DEFINE_FUNCTION(ABaseCharacter::execHandleHitSomething)
 }
 // ********** End Class ABaseCharacter Function HandleHitSomething *********************************
 
+// ********** Begin Class ABaseCharacter Function HandleTakePointDamage ****************************
+struct Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics
+{
+	struct BaseCharacter_eventHandleTakePointDamage_Parms
+	{
+		AActor* DamagedActor;
+		float Damage;
+		AController* InstigatedBy;
+		FVector HitLocation;
+		UPrimitiveComponent* FHitComponent;
+		FName BoneName;
+		FVector ShotFromDirection;
+		const UDamageType* DamageType;
+		AActor* DamageCauser;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character/BaseCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FHitComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamagedActor;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InstigatedBy;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_HitLocation;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_FHitComponent;
+	static const UECodeGen_Private::FNamePropertyParams NewProp_BoneName;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ShotFromDirection;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageType;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageCauser;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamagedActor = { "DamagedActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, DamagedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, Damage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_InstigatedBy = { "InstigatedBy", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, InstigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_HitLocation = { "HitLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, HitLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_FHitComponent = { "FHitComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, FHitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FHitComponent_MetaData), NewProp_FHitComponent_MetaData) };
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_BoneName = { "BoneName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, BoneName), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_ShotFromDirection = { "ShotFromDirection", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, ShotFromDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamageType = { "DamageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, DamageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageType_MetaData), NewProp_DamageType_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamageCauser = { "DamageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventHandleTakePointDamage_Parms, DamageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamagedActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_Damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_InstigatedBy,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_HitLocation,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_FHitComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_BoneName,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_ShotFromDirection,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamageType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamageCauser,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "HandleTakePointDamage", Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::BaseCharacter_eventHandleTakePointDamage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00880401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::BaseCharacter_eventHandleTakePointDamage_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABaseCharacter::execHandleTakePointDamage)
+{
+	P_GET_OBJECT(AActor,Z_Param_DamagedActor);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Damage);
+	P_GET_OBJECT(AController,Z_Param_InstigatedBy);
+	P_GET_STRUCT(FVector,Z_Param_HitLocation);
+	P_GET_OBJECT(UPrimitiveComponent,Z_Param_FHitComponent);
+	P_GET_PROPERTY(FNameProperty,Z_Param_BoneName);
+	P_GET_STRUCT(FVector,Z_Param_ShotFromDirection);
+	P_GET_OBJECT(UDamageType,Z_Param_DamageType);
+	P_GET_OBJECT(AActor,Z_Param_DamageCauser);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->HandleTakePointDamage(Z_Param_DamagedActor,Z_Param_Damage,Z_Param_InstigatedBy,Z_Param_HitLocation,Z_Param_FHitComponent,Z_Param_BoneName,Z_Param_ShotFromDirection,Z_Param_DamageType,Z_Param_DamageCauser);
+	P_NATIVE_END;
+}
+// ********** End Class ABaseCharacter Function HandleTakePointDamage ******************************
+
 // ********** Begin Class ABaseCharacter ***********************************************************
 void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 {
 	UClass* Class = ABaseCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "HandleHitSomething", &ABaseCharacter::execHandleHitSomething },
+		{ "HandleTakePointDamage", &ABaseCharacter::execHandleTakePointDamage },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -161,6 +255,7 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_HandleHitSomething, "HandleHitSomething" }, // 809047886
+		{ &Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage, "HandleTakePointDamage" }, // 804017948
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -219,10 +314,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 1942469448U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 165093221U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_2065383160(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_4050555026(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

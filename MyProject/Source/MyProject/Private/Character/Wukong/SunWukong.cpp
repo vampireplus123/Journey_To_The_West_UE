@@ -19,10 +19,6 @@ void ASunWukong::IAnimNotifyEndAttack()
 	}
 }
 
-void ASunWukong::Tick(float DeltaTime)
-{
-	
-}
 
 FVector ASunWukong::IGetSocketLocation(const FName& SocketName)
 {
@@ -53,21 +49,6 @@ void ASunWukong::Attack()
 float ASunWukong::ApplyDamage()
 {
 	Super::ApplyDamage();
-
-	/*if (DameToActor != nullptr)
-	{
-		auto AttackDirection = UKismetMathLibrary::GetDirectionUnitVector(
-			GetActorLocation(),
-			DameToActor->GetActorLocation());
-		UGameplayStatics::ApplyPointDamage(
-			DameToActor,
-			Damage,
-			AttackDirection,
-			HitResult,
-			GetController(),
-			this,
-			UDamageType::StaticClass());
-	}*/
 	return 300.f;
 }
 
