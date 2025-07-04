@@ -47,6 +47,25 @@ void UAttackComponent::EndAttack()
 	isAttack = false;
 }
 
+void UAttackComponent::HandleHitResult(const FHitResult& Result)
+{
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage
+		(
+			-1,
+			1.0f,
+			FColor::Red,
+			Result.BoneName.ToString()
+		);
+		hitActors.Emplace(Result.GetActor());
+	}
+	if (HitSomethingDelegate.IsBound())
+	{
+		HitSomethingDelegate.Execute(Result);
+	}
+}
+
 void UAttackComponent::TraceHit()
 {
 	if (CharacterDataAsset == nullptr)
@@ -61,8 +80,6 @@ void UAttackComponent::TraceHit()
 	const FVector StartLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->StartPoint);
 	const FVector EndLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->EndPoint);
 	
-	hitActors.Empty();
-	HitCount = 0;
 	bool bHit = UKismetSystemLibrary::SphereTraceMultiForObjects(
 		this,
 		StartLocation,
@@ -82,25 +99,19 @@ void UAttackComponent::TraceHit()
 	{
 		return;
 	}
-	for (const FHitResult& hitresult : HitsResults)
+	for (const FHitResult& Result : HitsResults)
 	{
-		if (hitActors.Contains(hitresult.GetActor()))
+		if (hitActors.Contains(Result.GetActor()))
 		{
 			continue;
 		}
-		if (GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage
-			(
-				-1,
-				1.0f,
-				FColor::Red,
-				hitresult.BoneName.ToString()
-			);
-			hitActors.Emplace(hitresult.GetActor());
-			HitCount++;
-		}
+		HandleHitResult(Result);
 	}
+}
+
+void UAttackComponent::SetUpTraceHit()
+{
+	hitActors.Empty();
 }
 
 

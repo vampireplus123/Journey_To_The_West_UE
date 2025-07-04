@@ -16,10 +16,19 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+struct FHitResult;
+
+// ********** Begin Delegate FHitSomethingDelegate *************************************************
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_10_DELEGATE \
+MYPROJECT_API void FHitSomethingDelegate_DelegateWrapper(const FScriptDelegate& HitSomethingDelegate, FHitResult const& Result);
+
+
+// ********** End Delegate FHitSomethingDelegate ***************************************************
+
 // ********** Begin Class UAttackComponent *********************************************************
 MYPROJECT_API UClass* Z_Construct_UClass_UAttackComponent_NoRegister();
 
-#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAttackComponent(); \
 	friend struct Z_Construct_UClass_UAttackComponent_Statics; \
@@ -30,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UAttackComponent)
 
 
-#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAttackComponent(UAttackComponent&&) = delete; \
 	UAttackComponent(const UAttackComponent&) = delete; \
@@ -40,12 +49,12 @@ public: \
 	NO_API virtual ~UAttackComponent();
 
 
-#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_13_PROLOG
-#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_16_GENERATED_BODY \
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_15_PROLOG
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Components_AttackComponent_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

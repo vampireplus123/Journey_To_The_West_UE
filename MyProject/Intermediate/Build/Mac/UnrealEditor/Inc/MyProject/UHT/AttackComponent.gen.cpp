@@ -6,6 +6,7 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Components/AttackComponent.h"
+#include "Engine/HitResult.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
@@ -15,12 +16,61 @@ void EmptyLinkFunctionForGeneratedCodeAttackComponent() {}
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 MYPROJECT_API UClass* Z_Construct_UClass_UAttackComponent();
 MYPROJECT_API UClass* Z_Construct_UClass_UAttackComponent_NoRegister();
 MYPROJECT_API UClass* Z_Construct_UClass_UAttackInterface_NoRegister();
 MYPROJECT_API UClass* Z_Construct_UClass_UBaseCharacterDataAsset_NoRegister();
+MYPROJECT_API UFunction* Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature();
 UPackage* Z_Construct_UPackage__Script_MyProject();
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Delegate FHitSomethingDelegate *************************************************
+struct Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics
+{
+	struct _Script_MyProject_eventHitSomethingDelegate_Parms
+	{
+		FHitResult Result;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Components/AttackComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Result_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Result;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_MyProject_eventHitSomethingDelegate_Parms, Result), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Result_MetaData), NewProp_Result_MetaData) }; // 267591329
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::NewProp_Result,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_MyProject, nullptr, "HitSomethingDelegate__DelegateSignature", Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::_Script_MyProject_eventHitSomethingDelegate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00520000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::_Script_MyProject_eventHitSomethingDelegate_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_MyProject_HitSomethingDelegate__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FHitSomethingDelegate_DelegateWrapper(const FScriptDelegate& HitSomethingDelegate, FHitResult const& Result)
+{
+	struct _Script_MyProject_eventHitSomethingDelegate_Parms
+	{
+		FHitResult Result;
+	};
+	_Script_MyProject_eventHitSomethingDelegate_Parms Parms;
+	Parms.Result=Result;
+	HitSomethingDelegate.ProcessDelegate<UObject>(&Parms);
+}
+// ********** End Delegate FHitSomethingDelegate ***************************************************
 
 // ********** Begin Class UAttackComponent *********************************************************
 void UAttackComponent::StaticRegisterNativesUAttackComponent()

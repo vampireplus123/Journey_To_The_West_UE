@@ -16,7 +16,13 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+struct FHitResult;
+
 // ********** Begin Class ABaseCharacter ***********************************************************
+#define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execHandleHitSomething);
+
+
 MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 
 #define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_INCLASS_NO_PURE_DECLS \
@@ -44,6 +50,7 @@ public: \
 #define FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_INCLASS_NO_PURE_DECLS \
 	FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h_23_ENHANCED_CONSTRUCTORS \
 private: \

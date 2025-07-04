@@ -40,6 +40,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void Attack();
+	virtual float ApplyDamage();
 	
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
@@ -47,8 +48,8 @@ private:
 private:
 	void LookAround(const FInputActionValue& value);
 	void MoveAround(const FInputActionValue& value);
-protected:
-	//Trace Line
+	UFUNCTION()
+	void HandleHitSomething(const FHitResult& HitResult);
 	
 protected:
 	//character data asset
@@ -63,3 +64,5 @@ private:
 	
 
 };
+
+

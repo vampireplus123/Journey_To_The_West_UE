@@ -7,8 +7,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "DataAsset/EnhancedInputData.h"
 #include "Components/AttackComponent.h"
-#include "Kismet/KismetSystemLibrary.h"
-#include "DataAsset/BaseCharacterDataAsset.h"
+#include "Kismet/GameplayStatics.h"
+#include "Kismet/KismetMathLibrary.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -62,6 +62,12 @@ void ABaseCharacter::Attack()
 	
 }
 
+float ABaseCharacter::ApplyDamage()
+{
+	return 200.f;
+}
+
+
 void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -83,12 +89,11 @@ void ABaseCharacter::PostInitializeComponents()
 	Super::PostInitializeComponents();
 	if (AttackComponent)
 	{
+		AttackComponent->HitSomethingDelegate.BindDynamic(this,&ABaseCharacter::HandleHitSomething);
 		AttackComponent->SettupAttackComponent(CharacterDataAsset);
 	}
 	
 }
-
-
 
 void ABaseCharacter::MoveAround(const FInputActionValue& Value)
 {
@@ -113,4 +118,28 @@ void ABaseCharacter::LookAround(const FInputActionValue& Value)
 	AddControllerPitchInput(LookAxisVector.Y);
 }
 
+
+void ABaseCharacter::HandleHitSomething(const FHitResult& HitResult)
+{
+	GEngine->AddOnScreenDebugMessage(
+		-1,
+		1.0f,
+        FColor::Red,
+		TEXT("hitsomethign"));
+	auto HitActor = HitResult.GetActor();
+	auto AttackLocation = UKismetMathLibrary::GetDirectionUnitVector
+	(
+	GetActorLocation(),
+		HitActor->GetActorLocation());
+	
+	UGameplayStatics::ApplyPointDamage(
+		HitActor,
+		ApplyDamage(),
+		AttackLocation,
+		HitResult,
+		GetController(),
+		this,
+		UDamageType::StaticClass()
+		);
+}
 

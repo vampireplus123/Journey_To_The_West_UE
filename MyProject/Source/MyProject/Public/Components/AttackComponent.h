@@ -7,9 +7,11 @@
 #include "Interfaces/AttackInterface.h"
 #include "AttackComponent.generated.h"
 
-
+DECLARE_DYNAMIC_DELEGATE_OneParam(FHitSomethingDelegate, const FHitResult&, Result);
+class ACharacter;
 class UBaseCharacterDataAsset;
 class UAnimMontage;
+class IAttackInterface;
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class MYPROJECT_API UAttackComponent : public UActorComponent
 {
@@ -24,12 +26,17 @@ public:
 	void RequestAttack();
 	void SettupAttackComponent(UBaseCharacterDataAsset* BCD);
 	void EndAttack();
+public:
+	FHitSomethingDelegate HitSomethingDelegate;
+
+public:
 	void TraceHit();
+	void SetUpTraceHit();
 private:
 	//trace hit data
 	UPROPERTY(EditDefaultsOnly, Category = "Trace Hit")
 	TArray<AActor*> hitActors;
-	int HitCount;
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -44,6 +51,8 @@ private:
 private:
 	bool isAttack;
 	void Attack();
+	void HandleHitResult(const FHitResult& Result);
+
 };
 
 
