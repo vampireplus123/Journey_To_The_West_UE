@@ -16,6 +16,8 @@ MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter();
 MYPROJECT_API UClass* Z_Construct_UClass_ASunWukong();
 MYPROJECT_API UClass* Z_Construct_UClass_ASunWukong_NoRegister();
 MYPROJECT_API UClass* Z_Construct_UClass_UAttackInterface_NoRegister();
+MYPROJECT_API UClass* Z_Construct_UClass_USunWukongDataAsset_NoRegister();
+MYPROJECT_API UClass* Z_Construct_UClass_USunWukongEnhancedInputData_NoRegister();
 UPackage* Z_Construct_UPackage__Script_MyProject();
 // ********** End Cross Module References **********************************************************
 
@@ -56,19 +58,26 @@ struct Z_Construct_UClass_ASunWukong_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Character/Wukong/SunWukong.h" },
 		{ "ModuleRelativePath", "Public/Character/Wukong/SunWukong.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SunWukongEnhancedInputData_MetaData[] = {
+		{ "Category", "Wukong Input Data" },
+		{ "ModuleRelativePath", "Public/Character/Wukong/SunWukong.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WukongDamage_MetaData[] = {
 		{ "Category", "Wukong Damage" },
 		{ "ModuleRelativePath", "Public/Character/Wukong/SunWukong.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SunWukongDataAsset_MetaData[] = {
+		{ "Category", "Wukong DataAsset" },
+		{ "ModuleRelativePath", "Public/Character/Wukong/SunWukong.h" },
+	};
 #endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SunWukongEnhancedInputData;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WukongDamage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SunWukongDataAsset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -77,9 +86,13 @@ struct Z_Construct_UClass_ASunWukong_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASunWukong_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASunWukong, Damage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Damage_MetaData), NewProp_Damage_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASunWukong_Statics::NewProp_SunWukongEnhancedInputData = { "SunWukongEnhancedInputData", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASunWukong, SunWukongEnhancedInputData), Z_Construct_UClass_USunWukongEnhancedInputData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SunWukongEnhancedInputData_MetaData), NewProp_SunWukongEnhancedInputData_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASunWukong_Statics::NewProp_WukongDamage = { "WukongDamage", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASunWukong, WukongDamage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WukongDamage_MetaData), NewProp_WukongDamage_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASunWukong_Statics::NewProp_SunWukongDataAsset = { "SunWukongDataAsset", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASunWukong, SunWukongDataAsset), Z_Construct_UClass_USunWukongDataAsset_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SunWukongDataAsset_MetaData), NewProp_SunWukongDataAsset_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASunWukong_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASunWukong_Statics::NewProp_Damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASunWukong_Statics::NewProp_SunWukongEnhancedInputData,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASunWukong_Statics::NewProp_WukongDamage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASunWukong_Statics::NewProp_SunWukongDataAsset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASunWukong_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASunWukong_Statics::DependentSingletons[])() = {
@@ -122,10 +135,10 @@ ASunWukong::~ASunWukong() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 1677554367U) },
+		{ Z_Construct_UClass_ASunWukong, ASunWukong::StaticClass, TEXT("ASunWukong"), &Z_Registration_Info_UClass_ASunWukong, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASunWukong), 2909813875U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_2361770666(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_3555078679(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_Wukong_SunWukong_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

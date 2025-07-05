@@ -4234,4 +4234,8 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacter.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/AttackInterface.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackInterface.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/IFlyingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/IFlyingInterface.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/JumpingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/JumpingInterface.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h

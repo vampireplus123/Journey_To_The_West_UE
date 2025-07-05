@@ -99,6 +99,10 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 		{ "Category", "TTrace Hit Data" },
 		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDrawTraceHit_MetaData[] = {
+		{ "Category", "TTrace Hit Data" },
+		{ "ModuleRelativePath", "Public/DataAsset/BaseCharacterDataAsset.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttackMontage;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HitReactionMontage;
@@ -110,6 +114,8 @@ struct Z_Construct_UClass_UBaseCharacterDataAsset_Statics
 	static const UECodeGen_Private::FNamePropertyParams NewProp_StartPoint;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_EndPoint;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DrawTime;
+	static void NewProp_bDrawTraceHit_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bDrawTraceHit;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -127,6 +133,11 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterD
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_StartPoint = { "StartPoint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, StartPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartPoint_MetaData), NewProp_StartPoint_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_EndPoint = { "EndPoint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, EndPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EndPoint_MetaData), NewProp_EndPoint_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_DrawTime = { "DrawTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBaseCharacterDataAsset, DrawTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DrawTime_MetaData), NewProp_DrawTime_MetaData) };
+void Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_bDrawTraceHit_SetBit(void* Obj)
+{
+	((UBaseCharacterDataAsset*)Obj)->bDrawTraceHit = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_bDrawTraceHit = { "bDrawTraceHit", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UBaseCharacterDataAsset), &Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_bDrawTraceHit_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bDrawTraceHit_MetaData), NewProp_bDrawTraceHit_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseCharacterDataAsset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_AttackMontage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_HitReactionMontage,
@@ -138,6 +149,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBaseChar
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_StartPoint,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_EndPoint,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_DrawTime,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBaseCharacterDataAsset_Statics::NewProp_bDrawTraceHit,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UBaseCharacterDataAsset_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UBaseCharacterDataAsset_Statics::DependentSingletons[])() = {
@@ -177,10 +189,10 @@ UBaseCharacterDataAsset::~UBaseCharacterDataAsset() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 1665939666U) },
+		{ Z_Construct_UClass_UBaseCharacterDataAsset, UBaseCharacterDataAsset::StaticClass, TEXT("UBaseCharacterDataAsset"), &Z_Registration_Info_UClass_UBaseCharacterDataAsset, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBaseCharacterDataAsset), 3989202685U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_1176519790(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_3865549650(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_BaseCharacterDataAsset_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

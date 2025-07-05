@@ -79,7 +79,8 @@ void UAttackComponent::TraceHit()
 	TArray<FHitResult> HitsResults;
 	const FVector StartLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->StartPoint);
 	const FVector EndLocation = AttackInterface->IGetSocketLocation(CharacterDataAsset->EndPoint);
-	
+
+	auto isDrawDebugTrace = CharacterDataAsset->bDrawTraceHit ? EDrawDebugTrace::ForDuration : EDrawDebugTrace::None;
 	bool bHit = UKismetSystemLibrary::SphereTraceMultiForObjects(
 		this,
 		StartLocation,
@@ -88,7 +89,7 @@ void UAttackComponent::TraceHit()
 		CharacterDataAsset->TraceObjectTyoe,
 		false,
 		CharacterDataAsset->ActorsToIgnore, // actors to ignore
-		EDrawDebugTrace::ForDuration,
+		isDrawDebugTrace,
 		HitsResults,
 		true,
 		FLinearColor::Red,

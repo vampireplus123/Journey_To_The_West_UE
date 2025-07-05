@@ -6,6 +6,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "DataAsset/EnhancedInputData.h"
 #include "Components/AttackComponent.h"
+#include "DataAsset/BaseCharacterDataAsset.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 
@@ -57,7 +58,10 @@ void ABaseCharacter::HandleTakePointDamage(AActor* DamagedActor, float Damage, c
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, TEXT("Take Point Damage"));
 	}
-	
+	if (CharacterDataAsset)
+	{
+		PlayAnimMontage(CharacterDataAsset->HitReactionMontage);
+	}
 }
 
 // -------------------------------

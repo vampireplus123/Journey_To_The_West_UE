@@ -4,7 +4,23 @@
 #include "Character/Wukong/SunWukong.h"
 
 #include "Components/AttackComponent.h"
-#include "DataAsset/BaseCharacterDataAsset.h"
+#include "DataAsset/SunWukongDataAsset.h"
+#include "Components/InputComponent.h"
+#include "DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
+void ASunWukong::BeginPlay()
+{
+	Super::BeginPlay();
+	
+}
+void ASunWukong::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	UEnhancedInputComponent* Input = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
+
+}
 
 
 void ASunWukong::IPlayAttackMontage(UAnimMontage* AttackMontage)
@@ -37,6 +53,8 @@ void ASunWukong::TraceHitBegin()
 		AttackComponent->SetUpTraceHit();
 	}
 }
+
+
 void ASunWukong::AnimNotifyStateTraceHit()
 {
 	AttackComponent->TraceHit();
@@ -50,16 +68,8 @@ void ASunWukong::Attack()
 float ASunWukong::ApplyDamage()
 {
 	Super::ApplyDamage();
-	return 300.f;
+	return WukongDamage;
 }
 
-void ASunWukong::HandleTakePointDamage(AActor* DamagedActor, float Damage, class AController* InstigatedBy,
-	FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection,
-	const class UDamageType* DamageType, AActor* DamageCauser)
-{
-	Super::HandleTakePointDamage(DamagedActor, Damage, InstigatedBy, HitLocation, FHitComponent, BoneName,
-	                             ShotFromDirection, DamageType,
-	                             DamageCauser);
-	PlayAnimMontage(CharacterDataAsset->HitReactionMontage);
-}
+
 

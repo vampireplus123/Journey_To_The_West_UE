@@ -33,4 +33,6 @@ public:
 	FName EndPoint;
 	UPROPERTY(EditDefaultsOnly, Category = "TTrace Hit Data")
 	float DrawTime;
+	UPROPERTY(EditDefaultsOnly, Category = "TTrace Hit Data")
+	bool bDrawTraceHit = true;
 };

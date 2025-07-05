@@ -4233,6 +4233,49 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacter.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/AttackInterface.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackInterface.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/IFlyingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/IFlyingInterface.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/JumpingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/JumpingInterface.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukong.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Components/AttackComponent.h \
-  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackComponent.generated.h
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackComponent.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/SunWukongDataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/BaseCharacterDataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukongDataAsset.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/EnhancedInputData.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/EnhancedInputData.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/SunWukongEnhancedInputData.generated.h \
+  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/Engine/Classes/Animation/AnimMontage.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
+  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementInterface.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
+  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
+  Runtime/Engine/Classes/Components/SceneComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
+  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
+  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
+  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
+  Runtime/Engine/Public/CollisionQueryParams.h \
+  Runtime/PhysicsCore/Public/CollisionShape.h \
+  Runtime/Engine/Public/Engine/OverlapInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h

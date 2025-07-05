@@ -134,7 +134,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::NewProp_DamageCauser,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "HandleTakePointDamage", Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::BaseCharacter_eventHandleTakePointDamage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00880400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "HandleTakePointDamage", Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::BaseCharacter_eventHandleTakePointDamage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00880401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage_Statics::BaseCharacter_eventHandleTakePointDamage_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage()
 {
@@ -255,7 +255,7 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_HandleHitSomething, "HandleHitSomething" }, // 809047886
-		{ &Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage, "HandleTakePointDamage" }, // 1438001668
+		{ &Z_Construct_UFunction_ABaseCharacter_HandleTakePointDamage, "HandleTakePointDamage" }, // 804017948
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -314,10 +314,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 730200592U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 165093221U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_4005789337(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_4050555026(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_Character_BaseCharacter_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

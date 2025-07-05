@@ -4276,6 +4276,8 @@
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/AttackInterface.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackInterface.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/AttackComponent.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/BaseCharacterDataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.generated.h \
   Runtime/Engine/Classes/Kismet/GameplayStatics.h \
   Runtime/Engine/Classes/Engine/LatentActionManager.h \
   Runtime/Engine/Classes/GameFramework/PlayerController.h \
