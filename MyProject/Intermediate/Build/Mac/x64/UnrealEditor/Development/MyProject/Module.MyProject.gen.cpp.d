@@ -4179,10 +4179,19 @@
   Runtime/Engine/Classes/Animation/AnimInstance.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseAnimInstance.generated.h \
   Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.gen.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/BaseCharacterDataAsset.h \
+  Runtime/Engine/Classes/Engine/DataAsset.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/BaseCharacterDataAsset.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/EnhancedInputData.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/DataAsset/EnhancedInputData.h \
-  Runtime/Engine/Classes/Engine/DataAsset.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/EnhancedInputData.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/IFlyingInterface.gen.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/IFlyingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/IFlyingInterface.generated.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/JumpingInterface.gen.cpp \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/Public/Interfaces/JumpingInterface.h \
+  /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/JumpingInterface.generated.h \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Intermediate/Build/Mac/UnrealEditor/Inc/MyProject/UHT/MyGameModeBase.gen.cpp \
   /Volumes/Data/Journey_To_The_West_UE/MyProject/Source/MyProject/GameMode/MyGameModeBase.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \

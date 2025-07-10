@@ -16,4 +16,8 @@ class MYPROJECT_API USunWukongEnhancedInputData : public UEnhancedInputData
 public:
 	UPROPERTY(EditDefaultsOnly,Category="Jump")
 	UInputAction* IA_Jump;
+	UPROPERTY(EditDefaultsOnly,Category="Second Attack")
+	UInputAction* IA_Second_Attack;
+	UPROPERTY(EditDefaultsOnly,Category="Third Attack")
+	UInputAction* IA_Third_Attack;
 };

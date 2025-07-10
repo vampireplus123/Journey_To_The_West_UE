@@ -37,7 +37,7 @@ private: \
 	static UClass* GetPrivateStaticClass(); \
 	friend MYPROJECT_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister(); \
 public: \
-	DECLARE_CLASS2(ABaseCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MyProject"), Z_Construct_UClass_ABaseCharacter_NoRegister) \
+	DECLARE_CLASS2(ABaseCharacter, ACharacter, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/MyProject"), Z_Construct_UClass_ABaseCharacter_NoRegister) \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
@@ -47,7 +47,7 @@ public: \
 	ABaseCharacter(const ABaseCharacter&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABaseCharacter); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseCharacter); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter) \
+	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(ABaseCharacter) \
 	NO_API virtual ~ABaseCharacter();
 
 

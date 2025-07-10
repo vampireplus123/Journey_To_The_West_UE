@@ -8,6 +8,7 @@
 #include "Components/InputComponent.h"
 #include "DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 void ASunWukong::BeginPlay()
 {
@@ -19,7 +20,8 @@ void ASunWukong::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	UEnhancedInputComponent* Input = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
-
+	Input->BindAction(SunWukongEnhancedInputData->IA_Second_Attack, ETriggerEvent::Triggered, this, &ASunWukong::SecondAttack);
+	Input->BindAction(SunWukongEnhancedInputData->IA_Third_Attack, ETriggerEvent::Triggered, this, &ASunWukong::ThirdAttack);
 }
 
 
@@ -69,6 +71,40 @@ float ASunWukong::ApplyDamage()
 {
 	Super::ApplyDamage();
 	return WukongDamage;
+}
+
+void ASunWukong::HitImpactEffect(FVector HitLocation)
+{
+	Super::HitImpactEffect(HitLocation);
+	if (SunWukongDataAsset)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(
+		GetWorld(),
+		SunWukongDataAsset->WukongHitImpact,
+		HitLocation
+		);
+	}
+}
+
+void ASunWukong::SecondAttack()
+{
+	
+	if (SunWukongDataAsset == nullptr) return;
+	if (SunWukongDataAsset->WukongOtherAttackMontages.IsValidIndex(0))
+	{
+		// PlayAnimMontage(SunWukongDataAsset->WukongOtherAttackMontages[0]);
+		IPlayAttackMontage(SunWukongDataAsset->WukongOtherAttackMontages[0]);
+	}
+}
+
+void ASunWukong::ThirdAttack()
+{
+	if (SunWukongDataAsset == nullptr) return;
+	if (SunWukongDataAsset->WukongOtherAttackMontages.IsValidIndex(1))
+	{
+		/*PlayAnimMontage(SunWukongDataAsset->WukongOtherAttackMontages[1]);*/
+		IPlayAttackMontage(SunWukongDataAsset->WukongOtherAttackMontages[1]);
+	}
 }
 
 

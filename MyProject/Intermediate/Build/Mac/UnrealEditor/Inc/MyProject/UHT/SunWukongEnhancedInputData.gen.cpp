@@ -66,8 +66,18 @@ struct Z_Construct_UClass_USunWukongEnhancedInputData_Statics
 		{ "Category", "Jump" },
 		{ "ModuleRelativePath", "Public/DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Second_Attack_MetaData[] = {
+		{ "Category", "Second Attack" },
+		{ "ModuleRelativePath", "Public/DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Third_Attack_MetaData[] = {
+		{ "Category", "Third Attack" },
+		{ "ModuleRelativePath", "Public/DataAsset/Characters/SunWukong/SunWukongEnhancedInputData.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Jump;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Second_Attack;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Third_Attack;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -76,8 +86,12 @@ struct Z_Construct_UClass_USunWukongEnhancedInputData_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Jump = { "IA_Jump", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USunWukongEnhancedInputData, IA_Jump), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Jump_MetaData), NewProp_IA_Jump_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Second_Attack = { "IA_Second_Attack", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USunWukongEnhancedInputData, IA_Second_Attack), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Second_Attack_MetaData), NewProp_IA_Second_Attack_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Third_Attack = { "IA_Third_Attack", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USunWukongEnhancedInputData, IA_Third_Attack), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Third_Attack_MetaData), NewProp_IA_Third_Attack_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USunWukongEnhancedInputData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Jump,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Second_Attack,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USunWukongEnhancedInputData_Statics::NewProp_IA_Third_Attack,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USunWukongEnhancedInputData_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_USunWukongEnhancedInputData_Statics::DependentSingletons[])() = {
@@ -117,10 +131,10 @@ USunWukongEnhancedInputData::~USunWukongEnhancedInputData() {}
 struct Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_Characters_SunWukong_SunWukongEnhancedInputData_h__Script_MyProject_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_USunWukongEnhancedInputData, USunWukongEnhancedInputData::StaticClass, TEXT("USunWukongEnhancedInputData"), &Z_Registration_Info_UClass_USunWukongEnhancedInputData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USunWukongEnhancedInputData), 4222703896U) },
+		{ Z_Construct_UClass_USunWukongEnhancedInputData, USunWukongEnhancedInputData::StaticClass, TEXT("USunWukongEnhancedInputData"), &Z_Registration_Info_UClass_USunWukongEnhancedInputData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USunWukongEnhancedInputData), 1218480436U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_Characters_SunWukong_SunWukongEnhancedInputData_h__Script_MyProject_2910264933(TEXT("/Script/MyProject"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_Characters_SunWukong_SunWukongEnhancedInputData_h__Script_MyProject_3013442209(TEXT("/Script/MyProject"),
 	Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_Characters_SunWukong_SunWukongEnhancedInputData_h__Script_MyProject_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Volumes_Data_Journey_To_The_West_UE_MyProject_Source_MyProject_Public_DataAsset_Characters_SunWukong_SunWukongEnhancedInputData_h__Script_MyProject_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

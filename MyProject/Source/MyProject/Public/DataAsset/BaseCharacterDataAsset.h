@@ -10,10 +10,14 @@
  * 
  */
 class UAnimMontage;
+class USoundBase;
 UCLASS()
 class MYPROJECT_API UBaseCharacterDataAsset : public UDataAsset
 {
 	GENERATED_BODY()
+public:
+	USoundBase* TrailSound;
+	// Montage
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite,Category="Attack Montage")
 	UAnimMontage* AttackMontage;

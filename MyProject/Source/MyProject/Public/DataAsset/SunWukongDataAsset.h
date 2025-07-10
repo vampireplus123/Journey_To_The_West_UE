@@ -11,13 +11,22 @@
  * 
  */
 class UAnimMontage;
+class UParticleSystem;
 UCLASS()
 class MYPROJECT_API USunWukongDataAsset : public UBaseCharacterDataAsset
 {
 	GENERATED_BODY()
+
+	//Montage
 public:
-	UPROPERTY(EditAnywhere, Category = "SunWukong")
+	UPROPERTY(EditAnywhere, Category = "SunWukong Air")
 	UAnimMontage* WukongFlyingMontage;
-	UPROPERTY(EditAnywhere, Category = "SunWukong")
+	UPROPERTY(EditAnywhere, Category = "SunWukong Air")
 	UAnimMontage* WukongJumpingMontage;
+	UPROPERTY(EditAnywhere, Category = "SunWukong Attack Montage Addition")
+	TArray<UAnimMontage*> WukongOtherAttackMontages;
+	// Particle Impact
+public:
+	UPROPERTY(EditAnywhere, Category = "SunWukong Hit Impact Particle")
+	UParticleSystem* WukongHitImpact;
 };

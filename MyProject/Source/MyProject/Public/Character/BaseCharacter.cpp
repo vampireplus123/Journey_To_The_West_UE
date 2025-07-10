@@ -50,14 +50,20 @@ void ABaseCharacter::PostInitializeComponents()
 	}
 }
 
+void ABaseCharacter::HitImpactEffect(FVector HitLocation)
+{
+	
+}
+
 void ABaseCharacter::HandleTakePointDamage(AActor* DamagedActor, float Damage, class AController* InstigatedBy,
-	FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection,
-	const class UDamageType* DamageType, AActor* DamageCauser)
+                                           FVector HitLocation, class UPrimitiveComponent* FHitComponent, FName BoneName, FVector ShotFromDirection,
+                                           const class UDamageType* DamageType, AActor* DamageCauser)
 {
 	if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, TEXT("Take Point Damage"));
 	}
+	HitImpactEffect(HitLocation);
 	if (CharacterDataAsset)
 	{
 		PlayAnimMontage(CharacterDataAsset->HitReactionMontage);

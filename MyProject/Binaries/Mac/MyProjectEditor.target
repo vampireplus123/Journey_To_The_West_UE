@@ -850,15 +850,7 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Mac/UnrealEditor-LiveLinkAnimationCore.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Mac/UnrealEditor-LiveLinkInterface.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Mac/UnrealEditor-LiveLinkMessageBusFramework.dylib",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2030,74 +2022,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLink.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkComponents.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkEditor.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkGraphNode.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkMovieScene.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkMultiUser.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor-LiveLinkSequencer.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/MLDeformerFramework/Binaries/Mac/UnrealEditor-MLDeformerFramework.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/MLDeformerFramework/Binaries/Mac/UnrealEditor-MLDeformerFrameworkEditor.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/MLDeformerFramework/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/NeuralMorphModel/Binaries/Mac/UnrealEditor-NeuralMorphModel.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/NeuralMorphModel/Binaries/Mac/UnrealEditor-NeuralMorphModelEditor.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/NeuralMorphModel/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/VertexDeltaModel/Binaries/Mac/UnrealEditor-VertexDeltaModel.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/VertexDeltaModel/Binaries/Mac/UnrealEditor-VertexDeltaModelEditor.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/VertexDeltaModel/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Animation/RigLogic/Binaries/Mac/UnrealEditor-RigLogicDeveloper.dylib",
 			"Type": "DynamicLibrary"
 		},
@@ -2247,42 +2171,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Developer/CLionSourceCodeAccess/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/Binaries/Mac/UnrealEditor-Concert.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/Binaries/Mac/UnrealEditor-ConcertClient.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/Binaries/Mac/UnrealEditor-ConcertServer.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/Binaries/Mac/UnrealEditor-ConcertTransport.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncClient/Binaries/Mac/UnrealEditor-ConcertSyncClient.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncClient/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncCore/Binaries/Mac/UnrealEditor-ConcertSyncCore.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncCore/Binaries/Mac/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -3030,14 +2918,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Experimental/NNERuntimeBasicCpu/Binaries/Mac/UnrealEditor-NNERuntimeBasicCpu.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/NNERuntimeBasicCpu/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Experimental/PlanarCutPlugin/Binaries/Mac/UnrealEditor-PlanarCut.dylib",
 			"Type": "DynamicLibrary"
 		},
@@ -3754,14 +3634,6 @@
 			"Type": "RequiredResource"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Database/SQLiteCore/Binaries/Mac/UnrealEditor-SQLiteCore.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Database/SQLiteCore/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Mac/UnrealEditor-ExampleDeviceProfileSelector.dylib",
 			"Type": "DynamicLibrary"
 		},
@@ -4187,14 +4059,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/WorldMetrics/Binaries/Mac/UnrealEditor.modules",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/marketplace/DazToUnreal/Binaries/Mac/UnrealEditor-DazToUnreal.dylib",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/marketplace/DazToUnreal/Binaries/Mac/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -24076,22 +23940,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Animation/LiveLink/LiveLink.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/MLDeformerFramework/MLDeformerFramework.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/NeuralMorphModel/NeuralMorphModel.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Animation/MLDeformer/VertexDeltaModel/VertexDeltaModel.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Animation/RigLogic/RigLogic.uplugin",
 			"Type": "UFS"
 		},
@@ -24141,18 +23989,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Developer/CLionSourceCodeAccess/CLionSourceCodeAccess.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertMain/ConcertMain.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncClient/ConcertSyncClient.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Developer/Concert/ConcertSync/ConcertSyncCore/ConcertSyncCore.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -24452,19 +24288,11 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Experimental/NNERuntimeBasicCpu/NNERuntimeBasicCpu.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Experimental/PlanarCutPlugin/PlanarCut.uplugin",
 			"Type": "UFS"
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Experimental/PlatformCrypto/PlatformCrypto.uplugin",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/PythonFoundationPackages/PythonFoundationPackages.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -24716,10 +24544,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Runtime/Database/SQLiteCore/SQLiteCore.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/Runtime/ExampleDeviceProfileSelector/ExampleDeviceProfileSelector.uplugin",
 			"Type": "UFS"
 		},
@@ -24836,10 +24660,6 @@
 			"Type": "UFS"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/marketplace/DazToUnreal/DazToUnreal.uplugin",
-			"Type": "UFS"
-		},
-		{
 			"Path": "$(ProjectDir)/MyProject.uproject",
 			"Type": "UFS"
 		}
@@ -24895,9 +24715,6 @@
 		"ColorGrading",
 		"CompositeCore",
 		"ComputeFramework",
-		"ConcertMain",
-		"ConcertSyncClient",
-		"ConcertSyncCore",
 		"ContentBrowserAssetDataSource",
 		"ContentBrowserClassDataSource",
 		"ContentBrowserFileDataSource",
@@ -24911,7 +24728,6 @@
 		"DataValidation",
 		"Dataflow",
 		"DatasmithContent",
-		"DazToUnreal",
 		"DeformerGraph",
 		"DumpGPUServices",
 		"EOSShared",
@@ -24961,10 +24777,8 @@
 		"LevelSequenceNavigatorBridge",
 		"LightMixer",
 		"LinuxDeviceProfileSelector",
-		"LiveLink",
 		"LocalizableMessage",
 		"LocationServicesBPLibrary",
-		"MLDeformerFramework",
 		"MacGraphicsSwitching",
 		"MassInsights",
 		"MaterialAnalyzer",
@@ -24984,10 +24798,8 @@
 		"N10XSourceCodeAccess",
 		"NFORDenoise",
 		"NNEDenoiser",
-		"NNERuntimeBasicCpu",
 		"NNERuntimeORT",
 		"NamingTokens",
-		"NeuralMorphModel",
 		"Niagara",
 		"NiagaraSimCaching",
 		"NullSourceCodeAccess",
@@ -25015,7 +24827,6 @@
 		"PropertyAccessNode",
 		"PropertyBindingUtils",
 		"ProxyLODPlugin",
-		"PythonFoundationPackages",
 		"PythonScriptPlugin",
 		"RenderDocPlugin",
 		"RenderGraphInsights",
@@ -25024,7 +24835,6 @@
 		"RigLogic",
 		"RigVM",
 		"RuntimeTelemetry",
-		"SQLiteCore",
 		"SequenceNavigator",
 		"SequencerAnimTools",
 		"SequencerScripting",
@@ -25051,7 +24861,6 @@
 		"UdpMessaging",
 		"VariantManager",
 		"VariantManagerContent",
-		"VertexDeltaModel",
 		"VisualStudioCodeSourceCodeAccess",
 		"VisualStudioSourceCodeAccess",
 		"WaveTable",

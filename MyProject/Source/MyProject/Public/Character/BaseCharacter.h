@@ -17,7 +17,7 @@ class UAttackComponent;
 class UBaseCharacterDataAsset;
 struct FInputActionState;
 
-UCLASS()
+UCLASS(Abstract)
 class MYPROJECT_API ABaseCharacter : public ACharacter
 {
 	GENERATED_BODY()
@@ -27,6 +27,10 @@ public:
 	ABaseCharacter();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	virtual void PostInitializeComponents() override;
+
+	//Hit Impact affet function for CHild:
+protected:
+	virtual void HitImpactEffect(FVector HitLocation);
 protected:
 	UPROPERTY(EditDefaultsOnly,Category="Data Assett")
 	UEnhancedInputData* EnhancedInputData;
