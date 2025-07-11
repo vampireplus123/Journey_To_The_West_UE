@@ -37,6 +37,14 @@ void UAttackComponent::RequestAttack()
 	}
 	Attack();
 }
+void UAttackComponent::RequestAttack(UAnimMontage* AdditionalAttackMontage)
+{
+	if (isAttack || AdditionalAttackMontage == nullptr || !AttackInterface) return;
+
+	PlayAttackMontage = AdditionalAttackMontage;
+	AttackInterface->IPlayAttackMontage(PlayAttackMontage);
+	isAttack = true;
+}
 
 void UAttackComponent::SettupAttackComponent(UBaseCharacterDataAsset* BCD)
 {

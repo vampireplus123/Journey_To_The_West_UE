@@ -92,8 +92,7 @@ void ASunWukong::SecondAttack()
 	if (SunWukongDataAsset == nullptr) return;
 	if (SunWukongDataAsset->WukongOtherAttackMontages.IsValidIndex(0))
 	{
-		// PlayAnimMontage(SunWukongDataAsset->WukongOtherAttackMontages[0]);
-		IPlayAttackMontage(SunWukongDataAsset->WukongOtherAttackMontages[0]);
+		AttackComponent->RequestAttack(SunWukongDataAsset->WukongOtherAttackMontages[0]);
 	}
 }
 
@@ -102,8 +101,7 @@ void ASunWukong::ThirdAttack()
 	if (SunWukongDataAsset == nullptr) return;
 	if (SunWukongDataAsset->WukongOtherAttackMontages.IsValidIndex(1))
 	{
-		/*PlayAnimMontage(SunWukongDataAsset->WukongOtherAttackMontages[1]);*/
-		IPlayAttackMontage(SunWukongDataAsset->WukongOtherAttackMontages[1]);
+		AttackComponent->RequestAttack(SunWukongDataAsset->WukongOtherAttackMontages[1]);
 	}
 }
 

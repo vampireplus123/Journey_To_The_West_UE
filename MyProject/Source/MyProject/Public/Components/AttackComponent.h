@@ -24,6 +24,7 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	*/
 	void RequestAttack();
+	void RequestAttack(UAnimMontage* AdditionalAttackMontage);
 	void SettupAttackComponent(UBaseCharacterDataAsset* BCD);
 	void EndAttack();
 public:
